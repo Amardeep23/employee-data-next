@@ -2,8 +2,12 @@ import mongoose, { Schema } from "mongoose";
 
 const topicSchema = new Schema(
   {
-    title: String,
-    description: String,
+    username: String,
+    phone: String,
+    email: String,
+    emp_id: String,
+    role: String,
+    isActive: Boolean,
   },
   {
     timestamps: true,

@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = nextConfig
+
+
+
+module.exports = {
+  experimental: {
+    serverComponents: true,
+    serverActions: true,
+  },
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
+  };
